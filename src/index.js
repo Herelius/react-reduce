@@ -1,13 +1,12 @@
-function reducer(state, action) {
-  switch (action.type) {
-    case "INCREMENT":
-      return state + 1;
-    case "DECREMENT":
-      return state - 1;
-    default:
-      return state;
-  }
-}
+import React from "react";
+import ReactDOM from "react-dom";
 
-reducer(0, { type: "INCREMENT" });
-// Will return 1
+import App from "./App";
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  rootElement
+);
